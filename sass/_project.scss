@@ -1,0 +1,50 @@
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h1, h2 {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  object-fit: coever;
+}
+.nav-link {
+  &:hover{
+    border-bottom: 2px map-get($theme-colors, 'success') solid;
+  }
+  &.active {
+    color: #636057;
+    font-weight: bold;
+    border-bottom: 2px map-get($theme-colors, 'primary') solid;
+  }
+}
+.custom {
+  &__btn {
+    &-primary--hover:hover{
+      color:white;
+      border:1px map-get($theme-colors, 'success') solid;
+      background-color: map-get($theme-colors, 'success');
+    }
+    &-secondary--hover:hover{
+      color: map-get($theme-colors, 'secondary');
+      border: 1px map-get($theme-colors, 'primary') solid;
+      background-color: map-get($theme-colors, 'primary');
+      .fas {
+        color: map-get($theme-colors, 'success');
+      }
+    }
+  }
+  &__sponsor{
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  &__aside {
+    &--top {
+      top: calc(66px + 3rem) ;
+    }
+
+  }
+}

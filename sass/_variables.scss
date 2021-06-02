@@ -1,0 +1,22 @@
+$primary:  #FFDF65;     
+$secondary:#858377;   
+$success:  #FF785E;      
+$info:     #E8E8DB;         
+$warning:  #F48263   ;  
+
+$font-family-sans-serif:  'Noto Sans TC',sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$body-color:#494846;
+
+$link-color: $success;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 3,
+);
