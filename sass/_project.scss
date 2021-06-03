@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 h1 {
   font-size: 2rem;
 }
@@ -43,8 +46,49 @@ img {
   }
   &__aside {
     &--top {
-      top: calc(66px + 3rem) ;
+      top: calc(66px + 3rem);
     }
-
+    &--height {
+      height: calc(75vh);
+      overflow-y: scroll;
+    }
+  }
+  &__card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  &__tooltip {
+    // https://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/
+    &:hover {
+      cursor: default;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: attr(tooltip);
+        background: rgba(0,0,0,.5);
+        border-radius: 5px;
+        width: 60px;
+        bottom: 33px;
+        color: map-get($theme-colors, 'primary');
+        font-size: 12px;
+        left: 20%;
+        padding: 3px;
+        z-index: 98;
+      }
+      &:hover::before{
+        position: absolute;
+        content: "";
+        border: solid;
+        border-color: rgba(0,0,0,.5) transparent;
+        border-width: 6px 6px 0 6px;
+        bottom: 27px;
+        left: 40%;
+        z-index: 99;
+      }
+    }
+  }
+  &--shaow {
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   }
 }
