@@ -337,7 +337,7 @@
             <!-- 留言內容 -->
             <article class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
               <header class="bg-light border-start border-primary border-3 p-3 rounded mb-5">
-                <p class="mb-0">只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題歡迎，<a href="#">聯絡提案人！</a></p>
+                <p class="mb-0">只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題歡迎，<a href="mailto:xxx@com.tw">聯絡提案人！</a></p>
               </header>
               <ul class="list-unstyled">
                 <li class="mb-3">
@@ -444,9 +444,11 @@
                 <option value="creditCard" selected>信用卡付款</option>
               </select>
             </div>
-            <div class="text-center mb-4">
+            <div class="d-flex mb-4">
               <input type="button" value="贊助方案"
-                class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill px-4">
+                class="d-none d-lg-block custom__btn-primary--hover btn btn-primary btn-lg rounded-pill px-4 mx-auto">
+              <input type="button" value="贊助方案"
+                class="position-fixed start-0 bottom-0 d-lg-none custom__btn-primary--hover btn btn-primary btn-lg rounded-top w-100">
             </div>
           </form>
         </div>
