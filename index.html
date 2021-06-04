@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="./img/logo.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
@@ -79,34 +80,34 @@
               </div>
             </div>
             <!-- 轉為可點連結或按鈕 -->
-            <ul class="list-unstyled d-flex">
-              <li>
+            <ul class="list-unstyled row">
+              <li class="col-6 col-md-3 col-lg-1">
                 <button type="button" tooltip="認證標章"
-                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none">
+                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none ps-0">
                   <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good01.svg" alt="認證標章"
                     class="custom__img--hover">
                   <span class="d-lg-none ms-2">認證標章</span>
                 </button>
               </li>
-              <li>
+              <li class="col-6 col-md-3 col-lg-1">
                 <button type="button" tooltip="品質保證"
-                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none">
+                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none ps-0">
                   <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good02.svg" alt="品質保證"
                     class="custom__img--hover">
                   <span class="d-lg-none ms-2">品質保證</span>
                 </button>
               </li>
-              <li>
+              <li class="col-6 col-md-3 col-lg-1">
                 <button type="button" tooltip="原生創意"
-                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none">
+                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none ps-0">
                   <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good03.svg" alt="原生創意"
                     class="custom__img--hover">
                   <span class="d-lg-none ms-2">原生創意</span>
                 </button>
               </li>
-              <li>
+              <li class="col-6 col-md-3 col-lg-1">
                 <button type="button" tooltip="人氣王"
-                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none">
+                  class="custom__tooltip d-flex align-items-center btn btn-link text-secondary text-decoration-none ps-0">
                   <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good04.svg" alt="人氣王"
                     class="custom__img--hover">
                   <span class="d-lg-none ms-2">人氣王</span>
@@ -118,15 +119,15 @@
               <p class="mb-0">在 2021/06/14 23:59 募資結束前，您都可以贊助我們！</p>
             </div>
             <input type="button" value="贊助專案"
-              class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill px-4 me-3 mb-1 w-100">
+              class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill px-4 me-3 mb-2 w-100">
             <div class="row g-2">
-              <div class="col-8">
+              <div class="col-6 col-lg-8">
                 <button type="button"
-                  class="custom__btn-secondary--hover btn btn-outline-secondary btn-lg rounded-pill border-3 px-4 me-3 w-100">
+                  class="custom__btn-secondary--hover btn btn-outline-secondary btn-lg rounded-pill border-3 px-1 px-sm-4 me-3 w-100">
                   <i class="fas fa-heart me-2"></i>追蹤專案
                 </button>
               </div>
-              <div class="col-4">
+              <div class="col-6 col-lg-4">
                 <button type="button"
                   class="custom__btn-secondary--hover btn btn-outline-secondary btn-lg rounded-pill border-3 px-4 me-3 w-100">
                   <i class="fas fa-share-alt me-2"></i>分享
@@ -138,29 +139,29 @@
       </div>
     </section>
     <!-- 商品細節 -->
-    <div class="container-fluid bg-white border-bottom mb-6 sticky-top">
+    <nav id="productTab" class="container-fluid bg-white border-bottom mb-6 sticky-top">
       <!-- 頁籤 -->
-      <nav class="container">
-        <ul class="nav bg-white pt-3 ms-0">
+      <div class="container">
+        <ul class="nav d-flex justify-content-between justify-content-sm-start bg-white pt-3 ms-0">
           <li class="nav-item">
-            <a class="nav-link link-secondary active pb-3" href="#introduction" data-bs-toggle="tab" role="tab"
+            <a class="nav-link link-secondary active px-1 px-sm-3 pb-3" href="#introduction" data-bs-toggle="tab" role="tab"
               aria-controls="introduction" aria-selected="true">專案介紹</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary pb-3" href="#qa" data-bs-toggle="tab" role="tab" aria-controls="qa"
+            <a class="nav-link link-secondary px-1 px-sm-3 pb-3" href="#qa" data-bs-toggle="tab" role="tab" aria-controls="qa"
               aria-selected="false">常見問答</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary pb-3" href="#schedule" data-bs-toggle="tab" role="tab"
+            <a class="nav-link link-secondary px-1 px-sm-3 pb-3" href="#schedule" data-bs-toggle="tab" role="tab"
               aria-controls="schedule" aria-selected="false">目前進度</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary pb-3" href="#comments" data-bs-toggle="tab" role="tab"
+            <a class="nav-link link-secondary px-1 px-sm-3 pe-sm-3 pb-3" href="#comments" data-bs-toggle="tab" role="tab"
               aria-controls="comments" aria-selected="false">留言</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <!-- 頁籤內容與贊助表單 -->
     <section class="container">
       <div class="row mb-5">
@@ -436,7 +437,10 @@
             </div>
             <div class="mb-3">
               <label for="userEmail" class="form-label">連絡信箱</label>
-              <input type="email" class="form-control bg-light" id="userEmail">
+              <input type="email" class="form-control bg-light is-invalid" id="userEmail">
+              <div id="validationServer03Feedback" class="invalid-feedback text-warning">
+                請輸入正確的郵件格式
+              </div>
             </div>
             <div class="mb-3">
               <label for="pay" class="form-label">付款方式</label>
@@ -446,18 +450,17 @@
             </div>
             <div class="d-flex mb-4">
               <input type="button" value="贊助方案"
-                class="d-none d-lg-block custom__btn-primary--hover btn btn-primary btn-lg rounded-pill px-4 mx-auto">
+                class="custom__btn-primary--hover d-none d-lg-block btn btn-primary btn-lg rounded-pill px-4 mx-auto">
               <input type="button" value="贊助方案"
-                class="position-fixed start-0 bottom-0 d-lg-none custom__btn-primary--hover btn btn-primary btn-lg rounded-top w-100">
+                class="js-bottomBtn custom__btn-primary--hover custom--index position-fixed start-0 bottom-0 d-lg-none btn btn-primary btn-lg rounded-top w-100">
             </div>
           </form>
         </div>
         <!-- 方案選擇側邊欄 -->
         <div class="col-lg-4">
-          <aside class="custom__aside--top custom__aside--height position-sticky">
+          <aside class="custom__aside">
             <ul class="list-unstyled">
               <li class="mb-3">
-                <!-- 需要更圓 -->
                 <div class="custom__card card mb-4">
                   <div class="card-header bg-white d-flex align-items-center border-0">
                     <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/store_img.jpg" alt="缺錢事務所"
@@ -579,7 +582,7 @@
             <input type="button" value="登入"
               class="custom__btn-primary--hover btn btn-primary rounded-pill w-100 mb-5 py-2">
           </form>
-          <div class="position-relative">
+          <div class="position-relative pb-3">
             <div class="progress" style="height: 1px;">
               <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100"
                 aria-valuemin="0" aria-valuemax="100"></div>

@@ -45,12 +45,12 @@ img {
     font-family: 'Baloo Tamma 2', cursive;
   }
   &__aside {
-    &--top {
-      top: calc(66px + 3rem);
-    }
-    &--height {
-      height: calc(75vh);
+    z-index: 9;
+    @include media-breakpoint-up(lg){
+      position: sticky;
       overflow-y: scroll;
+      top: calc(66px + 3rem);
+      height: calc(75vh);
     }
   }
   &__card {
@@ -90,5 +90,8 @@ img {
   &--shaow {
     transition: 0.3s;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  &--index {
+    z-index:999;
   }
 }

@@ -10521,13 +10521,17 @@ img {
   font-family: 'Baloo Tamma 2', cursive;
 }
 
-.custom__aside--top {
-  top: calc(66px + 3rem);
+.custom__aside {
+  z-index: 9;
 }
 
-.custom__aside--height {
-  height: calc(75vh);
-  overflow-y: scroll;
+@media (min-width: 992px) {
+  .custom__aside {
+    position: sticky;
+    overflow-y: scroll;
+    top: calc(66px + 3rem);
+    height: calc(75vh);
+  }
 }
 
 .custom__card {
@@ -10568,5 +10572,9 @@ img {
 .custom--shaow {
   transition: 0.3s;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom--index {
+  z-index: 999;
 }
 /*# sourceMappingURL=all.css.map */
