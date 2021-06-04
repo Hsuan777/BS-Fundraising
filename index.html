@@ -143,19 +143,19 @@
       <!-- 頁籤 -->
       <div class="container">
         <ul class="nav d-flex justify-content-between justify-content-sm-start bg-white pt-3 ms-0">
-          <li class="nav-item">
+          <li class="js-tabItem nav-item">
             <a class="nav-link link-secondary active px-1 px-sm-3 pb-3" href="#introduction" data-bs-toggle="tab" role="tab"
               aria-controls="introduction" aria-selected="true">專案介紹</a>
           </li>
-          <li class="nav-item">
+          <li class="js-tabItem nav-item">
             <a class="nav-link link-secondary px-1 px-sm-3 pb-3" href="#qa" data-bs-toggle="tab" role="tab" aria-controls="qa"
               aria-selected="false">常見問答</a>
           </li>
-          <li class="nav-item">
+          <li class="js-tabItem nav-item">
             <a class="nav-link link-secondary px-1 px-sm-3 pb-3" href="#schedule" data-bs-toggle="tab" role="tab"
               aria-controls="schedule" aria-selected="false">目前進度</a>
           </li>
-          <li class="nav-item">
+          <li class="js-tabItem nav-item">
             <a class="nav-link link-secondary px-1 px-sm-3 pe-sm-3 pb-3" href="#comments" data-bs-toggle="tab" role="tab"
               aria-controls="comments" aria-selected="false">留言</a>
           </li>
@@ -406,7 +406,7 @@
             </article>
           </section>
           <!-- 贊助表單 -->
-          <form action="">
+          <form action="" id="planFrom">
             <header class="mb-4">
               <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_heart.svg" alt=""
                 class="mx-auto mb-4">
@@ -451,8 +451,8 @@
             <div class="d-flex mb-4">
               <input type="button" value="贊助方案"
                 class="custom__btn-primary--hover d-none d-lg-block btn btn-primary btn-lg rounded-pill px-4 mx-auto">
-              <input type="button" value="贊助方案"
-                class="js-bottomBtn custom__btn-primary--hover custom--index position-fixed start-0 bottom-0 d-lg-none btn btn-primary btn-lg rounded-top w-100">
+              <a href="#plans" value="贊助方案"
+                class="js-bottomBtn custom__btn-primary--hover custom--index position-fixed start-0 bottom-0 d-lg-none btn btn-primary btn-lg rounded-top w-100">贊助方案</a>
             </div>
           </form>
         </div>
@@ -483,7 +483,7 @@
                     </ul>
                   </div>
                 </div>
-                <h4 class="text-center bg-light border-start border-end border-primary border-3 fs-bolder py-1 rounded">
+                <h4 id="plans" class="text-center bg-light border-start border-end border-primary border-3 fs-bolder py-1 rounded">
                   選擇一個方案來支持</h4>
               </li>
               <li class="mb-3">
@@ -501,8 +501,7 @@
                     <span class="badge bg-info text-secondary">已被贊助88次</span>
                     <span class="badge bg-secondary mb-2">限量<sapn class="text-primary">200</sapn>個</span>
                     <p>受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <button type="button"
-                      class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</button>
+                    <a href="#planFrom" class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</a>
                   </div>
                 </div>
               </li>
@@ -521,8 +520,8 @@
                     <span class="badge bg-info text-secondary">已被贊助88次</span>
                     <span class="badge bg-secondary mb-2">限量<sapn class="text-primary">200</sapn>個</span>
                     <p>受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <button type="button"
-                      class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</button>
+                    <a href="#planFrom"
+                      class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</a>
                   </div>
                 </div>
               </li>
@@ -541,8 +540,8 @@
                     <span class="badge bg-info text-secondary">已被贊助88次</span>
                     <span class="badge bg-secondary mb-2">限量<sapn class="text-primary">200</sapn>個</span>
                     <p>受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <button type="button"
-                      class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</button>
+                    <a href="#planFrom"
+                      class="custom__btn-primary--hover btn btn-primary btn-lg rounded-pill border-3 px-4 me-3 w-100">贊助此專案</a>
                   </div>
                 </div>
               </li>
@@ -552,7 +551,7 @@
       </div>
     </section>
   </main>
-  <footer class="text-center text-white bg-secondary py-5">
+  <footer id="pageFooter" class="text-center text-white bg-secondary py-5">
     <p class="mb-0">Copyright Ⓒ 拼拼 All rights reserved.</p>
   </footer>
   <!-- model -->
